@@ -1,6 +1,9 @@
 /**
  * 
  */
+/**
+ * 
+ */
 package ru.nikolai.goltsov.DrumBass;
 
 import javax.sound.midi.*;
@@ -14,20 +17,20 @@ public class MusicTest {
 	/**
 	 * @param args
 	 */
-	// Метод проигрывает MIDI файлы при помощи
-	// встроенного класса Sequencer
+	// РњРµС‚РѕРґ РїСЂРѕРёРіСЂС‹РІР°РµС‚ MIDI С„Р°Р№Р»С‹ РїСЂРё РїРѕРјРѕС‰Рё
+	// РІСЃС‚СЂРѕРµРЅРЅРѕРіРѕ РєР»Р°СЃСЃР° Sequencer
 
 	public void play() {
-		// При помощи try/catch ловим исключения,
-		// которые возникают при вызове MidiSystem.getSequencer()
+		// РџСЂРё РїРѕРјРѕС‰Рё try/catch Р»РѕРІРёРј РёСЃРєР»СЋС‡РµРЅРёСЏ,
+		// РєРѕС‚РѕСЂС‹Рµ РІРѕР·РЅРёРєР°СЋС‚ РїСЂРё РІС‹Р·РѕРІРµ MidiSystem.getSequencer()
 		try {
-			// Вызов экземпляра класса Sequencer()
+			// Р’С‹Р·РѕРІ СЌРєР·РµРјРїР»СЏСЂР° РєР»Р°СЃСЃР° Sequencer()
 			Sequencer sequencer = MidiSystem.getSequencer();
-			System.out.println("Успешно  получили синтезатор");
-			// Если поймали исключение то....
+			System.out.println("РЈСЃРїРµС€РЅРѕ  РїРѕР»СѓС‡РёР»Рё СЃРёРЅС‚РµР·Р°С‚РѕСЂ");
+			// Р•СЃР»Рё РїРѕР№РјР°Р»Рё РёСЃРєР»СЋС‡РµРЅРёРµ С‚Рѕ....
 		} catch (MidiUnavailableException ex) {
 			// TODO Auto-generated catch block
-			System.out.println("Неудача при создании синтезатора");
+			System.out.println("РќРµСѓРґР°С‡Р° РїСЂРё СЃРѕР·РґР°РЅРёРё СЃРёРЅС‚РµР·Р°С‚РѕСЂР°");
 		}
 
 	}
